@@ -1,0 +1,718 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(239, 239, 250);
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  color: rgb(53, 52, 52);
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+  margin-right: 1rem;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(53, 52, 52);
+  text-transform: uppercase;
+  padding: 9px;
+  margin-top: 24px;
+  margin-right: 1rem;
+}
+
+nav .mainMenu li a:hover {
+  background-color: white;
+  color: rgb(126, 126, 126);
+}
+
+nav .openMenu {
+  font-size: 2rem;
+  padding: 21px;
+  margin-right: 1rem;
+  display: none;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+nav ul .icons a {
+  display: none;
+}
+
+/* .fa-facebook:hover {
+  color: rgb(33, 33, 212);
+  margin-top: 8px;
+  display: none;
+}
+.fa-twitter:hover {
+  color: rgb(109, 109, 228);
+  margin-top: 8px;
+  display: none;
+}
+.fa-instagram:hover {
+  color: rgb(234, 19, 241);
+  margin-top: 8px;
+  display: none;
+}
+.fa-github:hover {
+  color: rgb(242, 255, 59);
+  margin-top: 8px;
+  display: none;
+} */
+
+.logo {
+  font-size: 30px;
+  padding: 17px;
+  cursor: pointer;
+  margin-right: 1rem;
+  font-family: "Yellowtail", cursive;
+  margin: 10px;
+}
+
+@media (max-width: 960px) {
+  nav .mainMenu {
+    height: 50vh;
+    width: 100vw;
+    padding: 10px;
+    opacity: 0.8;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: rgb(5, 5, 5);
+    transition: top 2s ease;
+  }
+
+  nav ul .icons {
+    display: none;
+  }
+
+  .fa {
+    padding: 4px;
+    font-size: 31px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(41, 40, 40);
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+  /* 
+  .fa-facebook:hover {
+    color: rgb(33, 33, 212);
+    margin-top: 8px;
+    display: none;
+  }
+  .fa-twitter:hover {
+    color: rgb(109, 109, 228);
+    margin-top: 8px;
+    display: none;
+  }
+  .fa-instagram:hover {
+    color: rgb(234, 19, 241);
+    margin-top: 8px;
+    display: none;
+  }
+  .fa-github:hover {
+    color: rgb(242, 255, 59);
+    margin-top: 8px;
+    display: none;
+  } */
+
+  nav .openMenu {
+    display: block;
+  }
+  nav .openMenu:hover {
+    background-color: white;
+    color: black;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    color: rgb(5, 5, 5);
+    top: 20px;
+    right: 20px;
+  }
+  nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(240, 240, 32);
+    font-size: 1.5rem;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+}
+
+/* HOME */
+
+.contaner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 7px;
+  width: 100vw;
+  height: 90vh;
+  background-color: rgb(239, 239, 250);
+  opacity: 1;
+}
+
+.greet {
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  opacity: 0.8;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+#myimg {
+  width: 20vw;
+}
+
+.line {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  opacity: 0.5;
+}
+.intrest1 {
+  font-size: 5rem;
+  display: inline;
+  text-align: center;
+  width: 100vw;
+  font-family: "League Gothic", sans-serif;
+  opacity: 0.6;
+}
+.intrest2 {
+  font-size: 5rem;
+  display: inline;
+  text-align: center;
+  width: 100vw;
+  font-family: "League Gothic", sans-serif;
+  opacity: 0.6;
+}
+
+/* SKILLS */
+.cont1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2rem;
+}
+.Skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 150vh;
+  background-color: rgb(225, 233, 250);
+  transform: skew(0deg, -5deg);
+}
+
+.skillstr {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 130vh;
+  transform: skew(0deg, 5deg);
+  color: black;
+}
+
+.head {
+  font-size: 2rem;
+  margin-top: 3rem;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.disc {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.skill_items_prime {
+  margin-top: 0rem;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid black; */
+}
+
+.skill_item {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  margin: 20px 20px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 63px;
+  width: 140px;
+}
+
+.item1 {
+  color: black;
+  height: 50px;
+  width: 50px;
+}
+
+.skill_item:hover {
+  background-color: rgb(112, 112, 112);
+  color: white;
+}
+
+.plat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.disc2 {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.plat_prime {
+  margin-top: 0rem;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.plat_item {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  margin: 20px 20px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 63px;
+  width: 140px;
+}
+
+.item2 {
+  height: 50px;
+  width: 50px;
+}
+
+.ide_prime {
+  margin-top: 0rem;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lag_prime {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.lag_item {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  margin: 20px 20px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 63px;
+  width: 140px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.field_prime {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.field_item {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  margin: 20px 20px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 63px;
+  width: 140px;
+}
+
+.ide_item {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  margin: 20px 20px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 63px;
+  width: 140px;
+}
+
+.contaner1 {
+  margin-top: -6rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url(back.png); */
+}
+.cont3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -1rem;
+  height: 80vh;
+  width: 60vw;
+  /* background-color: rgb(212, 212, 212); */
+  border-radius: 10px;
+}
+.head4 {
+  color: rgb(8, 8, 8);
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  margin-top: 15rem;
+}
+.edu_prime {
+  display: flex;
+  justify-content: space-around;
+  height: 50vh;
+  width: 77vw;
+}
+.edu_item1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 20rem;
+  height: 23rem;
+  border: 1px solid rgb(3, 3, 3);
+  background-color: rgb(221, 235, 255, 0.5);
+  border-radius: 10px;
+  transition: all 2s ease-in-out;
+}
+.edu_item1:hover {
+  transform: scale(1.2);
+  background-color: rgb(144, 203, 255);
+}
+
+.edu_item2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 20rem;
+  height: 23rem;
+  border: 1px solid rgb(3, 3, 3);
+  background-color: rgb(235, 208, 253, 0.5);
+  border-radius: 10px;
+  transition: all 2s ease-in-out;
+}
+.edu_item2:hover {
+  transform: scale(1.2);
+  background-color: rgb(219, 146, 253);
+}
+
+.edu_item3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 20rem;
+  height: 23rem;
+  border: 1px solid rgb(3, 3, 3);
+  background-color: rgb(253, 233, 208, 0.5);
+  border-radius: 10px;
+  transition: all 2s ease-in-out;
+}
+.edu_item3:hover {
+  transform: scale(1.2);
+  background-color: rgb(255, 188, 144);
+}
+
+.logo3 {
+  padding: 40px 50px;
+  width: 90px;
+  height: 90px;
+}
+.inst {
+  font-size: 26px;
+  font-family: "Fira Sans", sans-serif;
+}
+.cou {
+  font-family: "Inconsolata", monospace;
+  font-size: 28px;
+  padding-top: 10px;
+}
+.dur {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  padding-top: 10px;
+}
+.score {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+.plan {
+  margin-top: 0rem;
+  font-family: "Fira Sans", sans-serif;
+  color: rgb(20, 20, 20);
+  text-decoration: underline;
+  transition: all 1s ease-in-out;
+}
+
+.plan:hover {
+  transform: scale(1.5);
+}
+
+
+
+@media (max-width: 580px) {
+  .logo {
+    font-size: 20px;
+    padding: 17px;
+    cursor: pointer;
+    margin-right: 1rem;
+    font-family: "Yellowtail", cursive;
+    margin: 10px;
+  }
+
+  nav {
+    background-color: rgb(255, 255, 255);
+    color: rgb(53, 52, 52);
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+  }
+
+  nav .openMenu {
+    font-size: 2rem;
+    padding: 21px;
+    margin-right: 0rem;
+    cursor: pointer;
+  }
+
+  nav .closeMenu {
+    margin-right: 2rem;
+  }
+
+  #myimg {
+    width: 50vw;
+  }
+  .contaner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7px;
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(239, 239, 250);
+    opacity: 1;
+  }
+
+  .greet {
+    font-size: 2.8rem;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    opacity: 0.8;
+  }
+
+  .item {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .line {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    opacity: 0.5;
+  }
+  .intrest1 {
+    font-size: 4rem;
+    display: inline;
+    text-align: center;
+    width: 100vw;
+    font-family: "League Gothic", sans-serif;
+    opacity: 0.6;
+  }
+  .intrest2 {
+    font-size: 4rem;
+    display: inline;
+    text-align: center;
+    width: 100vw;
+    font-family: "League Gothic", sans-serif;
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 950px) {
+  .logo {
+    font-size: 28px;
+    padding: 17px;
+    cursor: pointer;
+    margin-right: 1rem;
+    font-family: "Yellowtail", cursive;
+    margin: 10px;
+  }
+
+  nav {
+    background-color: rgb(255, 255, 255);
+    color: rgb(53, 52, 52);
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+  }
+  nav .openMenu {
+    font-size: 2rem;
+    padding: 21px;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+  nav .closeMenu {
+    margin-right: 2rem;
+  }
+  #myimg {
+    width: 45vw;
+  }
+  .greet {
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    opacity: 0.8;
+  }
+  .intrest1 {
+    font-size: 5rem;
+    display: inline;
+    text-align: center;
+    width: 100vw;
+    font-family: "League Gothic", sans-serif;
+    opacity: 0.6;
+  }
+  .intrest2 {
+    font-size: 6rem;
+    display: inline;
+    text-align: center;
+    width: 100vw;
+    font-family: "League Gothic", sans-serif;
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 300px) {
+  nav {
+    background-color: rgb(255, 255, 255);
+    color: rgb(53, 52, 52);
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 6rem;
+  }
+  nav .mainMenu {
+    height: 80vh;
+  }
+
+  nav .openMenu {
+    font-size: 2rem;
+    padding: 21px;
+    margin-right: 0rem;
+    cursor: pointer;
+  }
+  #myimg {
+    width: 60vw;
+  }
+  .greet {
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    opacity: 0.8;
+  }
+  .intrest1 {
+    font-size: 3rem;
+    display: inline;
+    text-align: center;
+    width: 100vw;
+    font-family: "League Gothic", sans-serif;
+    opacity: 0.6;
+  }
+  .intrest2 {
+    font-size: 4rem;
+    display: inline;
+    text-align: center;
+    width: 100vw;
+    font-family: "League Gothic", sans-serif;
+    opacity: 0.6;
+  }
+}
